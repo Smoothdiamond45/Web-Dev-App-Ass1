@@ -15,5 +15,8 @@ router.get('/dashboard', dashboard.createView);
 
 import about from './controllers/about.js';
 router.get('/about', about.createView);
+
+import detailsL from './controllers/detailsL.js';
+router.get('/detailsL', detailsL.createView);
 export default router;
 
