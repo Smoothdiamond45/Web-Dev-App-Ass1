@@ -78,10 +78,6 @@ body {
     .nav-links a:hover,
     .nav-links a.active { color: var(--gold); }
 
-    /* ── Page Sections (simulated routing) ─────────── */
-    .page { display: none; padding-top: 5rem; min-height: 100vh; }
-    .page.active { display: block; }
-
     /* ── VIEW 1: WELCOME ───────────────────────────── */
     .hero {
       position: relative;
