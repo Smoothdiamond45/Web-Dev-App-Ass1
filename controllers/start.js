@@ -29,7 +29,5 @@ const start = {
 };
 
 export default start;
-import logger from "../utils/logger.js";
-import appStore from "../models/app-store.js";
 
 

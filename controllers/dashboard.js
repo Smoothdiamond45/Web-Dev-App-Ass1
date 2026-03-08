@@ -7,7 +7,6 @@
  */
 
 import logger from "../utils/logger.js";
-import appStore from "../models/app-store.js";
 
 const dashboard = {
     /**
