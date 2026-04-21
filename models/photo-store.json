@@ -23,10 +23,368 @@
           "iso": "ISO 50",
           "lens": "5.7mm",
           "camera": "iPhone 13 Pro Max"
+        },
+        {
+          "img": "images/Landscape/dublin.jpg",
+          "title": "The gentle sound of wedding bells",
+          "location": "Fancy park, Dublin",
+          "aperture": "f/11",
+          "shutter": "1/80s",
+          "iso": "ISO 100",
+          "lens": "35mm",
+          "camera": "Sony A7MkII"
+        },
+        {
+          "img": "images/Landscape/island.jpg",
+          "title": "Isolation and peace",
+          "location": "Beach",
+          "aperture": "f/2.6",
+          "shutter": "1/2212s",
+          "iso": "ISO 50",
+          "lens": "15.66mm",
+          "camera": "iPhone 16 Pro Max"
+        },
+        {
+          "img": "images/Landscape/lighthouse.jpg",
+          "title": "A Beacon for lost souls",
+          "location": "Beach",
+          "aperture": "f/2.6",
+          "shutter": "1/2212s",
+          "iso": "ISO 50",
+          "lens": "15.66mm",
+          "camera": "iPhone 16 Pro Max"
+        },
+        {
+          "img": "images/Landscape/ruins.jpg",
+          "title": "Silence Amoung History",
+          "location": "Wicklow Mountains",
+          "aperture": "f/2.8",
+          "shutter": "1/968s",
+          "iso": "ISO 32",
+          "lens": "9mm",
+          "camera": "iPhone 13 Pro Max"
         }
-       
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "photos": [
+        {
+          "img": "images/Animals/bigcat.jpg",
+          "title": "Disturbed slumber",
+          "location": "Dublin Zoo, Ireland",
+          "aperture": "f/8",
+          "shutter": "1/250s",
+          "iso": "ISO 100",
+          "lens": "24mm",
+          "camera": "Sony A7III"
+        },
+        {
+          "img": "images/Animals/cat.jpg",
+          "title": "Sleeping Peacefully",
+          "location": "My Bed",
+          "aperture": "f/11",
+          "shutter": "1/500s",
+          "iso": "ISO 200",
+          "lens": "16mm",
+          "camera": "iPhone 16 Pro Max"
+        },
+        {
+          "img": "images/Animals/confused.jpg",
+          "title": "Seeing winter for the first time",
+          "location": "My back Garden",
+          "aperture": "f/5.6",
+          "shutter": "1/80s",
+          "iso": "ISO 400",
+          "lens": "24mm",
+          "camera": "Sony A7II"
+        },
+        {
+          "img": "images/Animals/flexing.jpg",
+          "title": "Flexing hard",
+          "location": "Morroco, Beach Yoga",
+          "aperture": "f/5.6",
+          "shutter": "1/80s",
+          "iso": "ISO 400",
+          "lens": "12mm",
+          "camera": "iPhone 14 Pro"
+        },
+        {
+          "img": "images/Animals/smile.jpg",
+          "title": "She's Guilty",
+          "location": "The Park, Glen",
+          "aperture": "f/5.6",
+          "shutter": "1/80s",
+          "iso": "ISO 400",
+          "lens": "24mm",
+          "camera": "Sony A7MKII"
+        },
+        {
+          "img": "images/Animals/mother.jpg",
+          "title": "Mother and Offspring",
+          "location": "Dingle, Kerry",
+          "aperture": "f/5.6",
+          "shutter": "1/80s",
+          "iso": "ISO 400",
+          "lens": "70mm",
+          "camera": "Sony A7MKII"
+        }
+      ]
+    },
+    {
+      "id": "street",
+      "name": "Street",
+      "photos": [
+        {
+          "img": "images/Street/high.jpg",
+          "title": "Perfect Windows",
+          "location": "Copenhagen, Denmark",
+          "aperture": "f/11",
+          "shutter": "1/80s",
+          "iso": "ISO 100",
+          "lens": "35mm",
+          "camera": "Sony A7II"
+        },
+        {
+          "img": "images/Street/ball.jpg",
+          "title": "Ball",
+          "location": "Valencia",
+          "aperture": "f/1.78",
+          "shutter": "1/5814s",
+          "iso": "ISO 80",
+          "lens": "6.765mm",
+          "camera": "iPhone 15 Pro"
+        },
+        {
+          "img": "images/Street/spain.jpg",
+          "title": "Fountain",
+          "location": "Dublin",
+          "aperture": "f/13",
+          "shutter": "1/100s",
+          "iso": "ISO 100",
+          "lens": "70mm",
+          "camera": "Sony A7II"
+        },
+        {
+          "img": "images/Street/london.jpg",
+          "title": "Breaking through",
+          "location": "London",
+          "aperture": "f/14",
+          "shutter": "1/100s",
+          "iso": "ISO 100",
+          "lens": "74mm",
+          "camera": "Sony A7II"
+        },
+        {
+          "img": "images/Street/denmark.jpg",
+          "title": "Brick Tower",
+          "location": "Copenhagen, Denmark",
+          "aperture": "f/1.5",
+          "shutter": "1/60s",
+          "iso": "ISO 250",
+          "lens": "5.7mm",
+          "camera": "iPhone 13 Pro Max"
+        },
+        {
+          "img": "images/Street/odd.jpg",
+          "title": "Standing Pots",
+          "location": "Copenhagen, Denmark",
+          "aperture": "f/11",
+          "shutter": "1/80s",
+          "iso": "ISO 100",
+          "lens": "35mm",
+          "camera": "Sony A7II"
+        }
+      ]
+    },
+    {
+      "id": "night",
+      "name": "Night",
+      "photos": [
+        {
+          "img": "images/Night/breaking.jpg",
+          "title": "Breaking through the night",
+          "location": "Cork, Ireland",
+          "aperture": "f/2.8",
+          "shutter": "1/13158s",
+          "iso": "ISO 50",
+          "lens": "9mm",
+          "camera": "iPhone 16 Pro Max"
+        },
+        {
+          "img": "images/Night/christmas.jpg",
+          "title": "Christmas Silhouette",
+          "location": "The dump, Cork, Ireland",
+          "aperture": "f/1.78",
+          "shutter": "1/17s",
+          "iso": "ISO 1600",
+          "lens": "6.765mm",
+          "camera": "iPhone 15 Pro"
+        },
+        {
+          "img": "images/Night/park.jpg",
+          "title": "The Quarry losing light",
+          "location": "The Quarry, Cork",
+          "aperture": "f/1.78",
+          "shutter": "1/56s",
+          "iso": "ISO 80",
+          "lens": "6.765mm",
+          "camera": "iPhone 15 Pro"
+        },
+        {
+          "img": "images/Night/play.jpg",
+          "title": "The start of a play",
+          "location": "London",
+          "aperture": "f/1.78",
+          "shutter": "1/34s",
+          "iso": "ISO 1000",
+          "lens": "6.765mm",
+          "camera": "iPhone 15 Pro"
+        },
+        {
+          "img": "images/Night/scare.jpg",
+          "title": "Burnt in Shadows",
+          "location": "London",
+          "aperture": "f/2.2",
+          "shutter": "1/29s",
+          "iso": "ISO 2500",
+          "lens": "2.22mm",
+          "camera": "iPhone 15 Pro"
+        },
+        {
+          "img": "images/Night/worldbeyond.jpg",
+          "title": "Suspended Between Worlds",
+          "location": "Cork, Ireland",
+          "aperture": "f/1.78",
+          "shutter": "1/104167s",
+          "iso": "ISO 80",
+          "lens": "6.765mm",
+          "camera": "iPhone 15 Pro"
+        }
+      ]
+    },
+    {
+      "id": "portrait",
+      "name": "Portrait",
+      "photos": [
+        {
+          "img": "images/Portrait/pondering.jpg",
+          "title": "Thoughts setting like the sun",
+          "location": "Cork, Ireland",
+          "aperture": "f/2.8",
+          "shutter": "1/1969s",
+          "iso": "ISO 64",
+          "lens": "9mm",
+          "camera": "iPhone 16 Pro Max"
+        },
+        {
+          "img": "images/Portrait/reflect.jpg",
+          "title": "Light Reflection",
+          "location": "Random Hill, Cork",
+          "aperture": "f/1.78",
+          "shutter": "1/30s",
+          "iso": "ISO 1600",
+          "lens": "6.75mm",
+          "camera": "iPhone 16 Pro Max"
+        },
+        {
+          "img": "images/Portrait/stone.jpg",
+          "title": "Final Resting",
+          "location": "Graveyard, Cork",
+          "aperture": "f/6.3",
+          "shutter": "1/320s",
+          "iso": "ISO 400",
+          "lens": "278mm",
+          "camera": "Sony A7MII"
+        },
+        {
+          "img": "images/Portrait/watching.jpg",
+          "title": "Observing a shot",
+          "location": "Edinburgh, Scotland",
+          "aperture": "f/2.8",
+          "shutter": "1/121s",
+          "iso": "ISO 80",
+          "lens": "9mm",
+          "camera": "iPhone 13 Pro Max"
+        },
+        {
+          "img": "images/Portrait/woman.jpg",
+          "title": "A Simple Window Shot",
+          "location": "Valencia",
+          "aperture": "f/8",
+          "shutter": "1/200s",
+          "iso": "ISO 100",
+          "lens": "70mm",
+          "camera": "Sony A7MII"
+        }
+      ]
+    },
+    {
+      "id": "macro",
+      "name": "Macro",
+      "photos": [
+        {
+          "img": "images/Macro/peace.jpg",
+          "title": "Soft yet alert",
+          "location": "My bed (Happens often)",
+          "aperture": "f/6.3",
+          "shutter": "1/80s",
+          "iso": "ISO 100",
+          "lens": "70mm",
+          "camera": "Sony A7III"
+        },
+        {
+          "img": "images/Macro/colour.jpg",
+          "title": "Last Colour before the cold",
+          "location": "Bishopstown, Cork",
+          "aperture": "f/1.8",
+          "shutter": "1/99s",
+          "iso": "ISO 40",
+          "lens": "1.57mm",
+          "camera": "iPhone 13 Pro Max"
+        },
+        {
+          "img": "images/Macro/donteat.jpg",
+          "title": "An Unwise Meal",
+          "location": "Old waste dumping ground",
+          "aperture": "f/2.2",
+          "shutter": "1/99s",
+          "iso": "ISO 100",
+          "lens": "2.22mm",
+          "camera": "iPhone 15 Pro"
+        },
+        {
+          "img": "images/Macro/sun.jpg",
+          "title": "Evening sun, light wind",
+          "location": "Kildare",
+          "aperture": "f/2.8",
+          "shutter": "1/235s",
+          "iso": "ISO 50",
+          "lens": "15.66mm",
+          "camera": "iPhone 16 Pro Max"
+        },
+        {
+          "img": "images/Macro/winter.jpg",
+          "title": "The cold hits all life",
+          "location": "Graveyard, Kerry",
+          "aperture": "f/6.3",
+          "shutter": "1/320s",
+          "iso": "ISO 100",
+          "lens": "74mm",
+          "camera": "Sony A7MII"
+        },
+        {
+          "img": "images/Macro/wish.jpg",
+          "title": "Make a wish",
+          "location": "Side of the road, Cork",
+          "aperture": "f/1.78",
+          "shutter": "1/939s",
+          "iso": "ISO 64",
+          "lens": "6.675mm",
+          "camera": "iPhone 15 Pro"
+        }
       ]
     }
-    
   ]
 }
