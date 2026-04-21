@@ -1,31 +1,19 @@
-'use strict';
-/**
- * @file start.js
- * @description Controller for the Start page.
- * Handles rendering the initial landing view with app information.
- * @module controllers/start
- */
-
-import logger from "../utils/logger.js";
-import appStore from "../models/app-store.js";
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const photoStore = require('../models/photo-store.json');
 
 const detailsL = {
-    /**
-   * Renders the Start page view.
-   * Retrieves app info from the store and passes it to the template.
-   * @param {object} request - Express HTTP request object
-   * @param {object} response - Express HTTP response object
-   */
   createView(request, response) {
-    logger.info("Details page loading!");
+    logger.info("Landscape details page loading!");
+    
+    // Find the landscape category from the JSON store
+    const category = photoStore.categories.find(c => c.id === 'landscape');
     
     const viewData = {
-      title: "CA1 Starter App",
-      info: appStore.getAppInfo()
+      title: "Landscape",
+      category: category
     };
     
-    response.render('detailsL', viewData);   
+    response.render('detailsL', viewData);
   },
 };
-
-export default detailsL;

@@ -3,101 +3,26 @@
   <div class="details-header">
     <div>
       <p class="section-eyebrow">Collection</p>
-      <h2 class="section-title">Landscape</h2>
+      <h2 class="section-title">{{category.name}}</h2>
     </div>
   </div>
 
   <div class="photo-grid">
-
+    {{#each category.photos}}
     <div class="photo-card">
-      <img src="images/Landscape/beach.jpg"/>
+      <img src="{{this.img}}" />
       <div class="photo-info">
-        <h3 class="photo-title">Early morning dip</h3>
-        <p class="photo-location">White Bay, Cork</p>
+        <h3 class="photo-title">{{this.title}}</h3>
+        <p class="photo-location">{{this.location}}</p>
         <div class="photo-meta">
-          <span class="meta-tag">f/2.8</span>
-          <span class="meta-tag">1/2597s</span>
-          <span class="meta-tag">ISO 25</span>
-            <span class="meta-tag">9mm</span>
-          <span class="meta-tag">iPhone 15 Pro</span>
+          <span class="meta-tag">{{this.aperture}}</span>
+          <span class="meta-tag">{{this.shutter}}</span>
+          <span class="meta-tag">{{this.iso}}</span>
+          <span class="meta-tag">{{this.lens}}</span>
+          <span class="meta-tag">{{this.camera}}</span>
         </div>
       </div>
     </div>
-
-    <div class="photo-card">
-      <img src="images/Landscape/cliff.jpg" />
-      <div class="photo-info">
-        <h3 class="photo-title">Crashing Power against Unmoving Defence</h3>
-        <p class="photo-location">51°47'57.94"N 8°17'04.13"W</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/1.5</span>
-          <span class="meta-tag">1/2841s</span>
-          <span class="meta-tag">ISO 50</span>
-          <span class="meta-tag">5.7mm</span>
-          <span class="meta-tag">iPhone 13 Pro Max</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="photo-card">
-      <img src="images/Landscape/dublin.jpg" />
-      <div class="photo-info">
-        <h3 class="photo-title">The gentle sound of wedding bells</h3>
-        <p class="photo-location">Fancy park, Dublin</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/11</span>
-          <span class="meta-tag">1/80s</span>
-          <span class="meta-tag">ISO 100</span>
-          <span class="meta-tag">35mm</span>
-          <span class="meta-tag">Sony A7MkII</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="photo-card">
-      <img src="images/Landscape/island.jpg"/>
-      <div class="photo-info">
-        <h3 class="photo-title">Isolation and peace</h3>
-        <p class="photo-location">Beach</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/2.6</span>
-          <span class="meta-tag">1/2212s</span>
-          <span class="meta-tag">ISO 50</span>
-          <span class="meta-tag">15.66mm</span>
-          <span class="meta-tag">iPhone 16 Pro Max</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="photo-card">
-      <img src="images/Landscape/lighthouse.jpg" />
-      <div class="photo-info">
-        <h3 class="photo-title">A Beacon for lost souls</h3>
-        <p class="photo-location">Beach</p>
-        <div class="photo-meta">
-         <span class="meta-tag">f/2.6</span>
-          <span class="meta-tag">1/2212s</span>
-          <span class="meta-tag">ISO 50</span>
-          <span class="meta-tag">15.66mm</span>
-          <span class="meta-tag">iPhone 16 Pro Max</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="photo-card">
-      <img src="images/Landscape/ruins.jpg"/>
-      <div class="photo-info">
-        <h3 class="photo-title">Silence Amoung History</h3>
-        <p class="photo-location">📍 Wicklow Mountains</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/2.8</span>
-          <span class="meta-tag">1/968s</span>
-          <span class="meta-tag">ISO 32</span>
-          <span class="meta-tag">9mm</span>
-          <span class="meta-tag">iPhone 13 Pro Max</span>
-        </div>
-      </div>
-    </div>
-
+    {{/each}}
   </div>
 </section>

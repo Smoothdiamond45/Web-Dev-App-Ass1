@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": "landscape",
+      "name": "Landscape",
+      "photos": [
+        {
+          "img": "images/Landscape/beach.jpg",
+          "title": "Early morning dip",
+          "location": "White Bay, Cork",
+          "aperture": "f/2.8",
+          "shutter": "1/2597s",
+          "iso": "ISO 25",
+          "lens": "9mm",
+          "camera": "iPhone 15 Pro"
+        },
+        {
+          "img": "images/Landscape/cliff.jpg",
+          "title": "Crashing Power against Unmoving Defence",
+          "location": "51°47'57.94\"N 8°17'04.13\"W",
+          "aperture": "f/1.5",
+          "shutter": "1/2841s",
+          "iso": "ISO 50",
+          "lens": "5.7mm",
+          "camera": "iPhone 13 Pro Max"
+        }
+       
+      ]
+    }
+    
+  ]
+}
