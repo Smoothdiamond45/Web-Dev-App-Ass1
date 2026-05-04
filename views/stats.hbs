@@ -1,0 +1,56 @@
+{{> menu}}
+<section class="page" id="page-stats">
+  <div class="section-header">
+    <p class="section-eyebrow">Overview</p>
+    <h2 class="section-title">Statistics</h2>
+  </div>
+
+  <div class="stats-grid">
+
+    <!-- Total Photos -->
+    <div class="stat-card">
+      <p class="stat-number">{{stats.totalPhotos}}</p>
+      <p class="stat-label">Total Photos</p>
+    </div>
+
+    <!-- Total Categories -->
+    <div class="stat-card">
+      <p class="stat-number">{{stats.totalCategories}}</p>
+      <p class="stat-label">Collections</p>
+    </div>
+
+    <!-- Unique Locations -->
+    <div class="stat-card">
+      <p class="stat-number">{{stats.uniqueLocations}}</p>
+      <p class="stat-label">Unique Locations</p>
+    </div>
+
+    <!-- Most Used Camera -->
+    <div class="stat-card">
+      <p class="stat-number">{{stats.mostUsedCamera}}</p>
+      <p class="stat-label">Most Used Camera ({{stats.mostUsedCameraCount}} shots)</p>
+    </div>
+
+  </div>
+
+  <!-- Photos per Category Breakdown -->
+  <div class="section-header" style="margin-top: 3rem;">
+    <h3 class="section-title">Photos per Collection</h3>
+  </div>
+  <ul class="gear-list">
+    {{#each stats.photosPerCategory}}
+      <li><span>{{@key}}</span><span>{{this}} photos</span></li>
+    {{/each}}
+  </ul>
+
+  <!-- Camera Breakdown -->
+  <div class="section-header" style="margin-top: 3rem;">
+    <h3 class="section-title">Camera Usage</h3>
+  </div>
+  <ul class="gear-list">
+    {{#each stats.cameraCounts}}
+      <li><span>{{@key}}</span><span>{{this}} shots</span></li>
+    {{/each}}
+  </ul>
+
+</section>

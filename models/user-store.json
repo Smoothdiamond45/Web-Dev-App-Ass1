@@ -20,6 +20,13 @@
       "email": "thisiscool@gmail.com",
       "password": "123456",
       "id": "31905e07-9a93-4d55-9f8b-b641671a5aa4"
+    },
+    {
+      "firstName": "steven",
+      "lastName": "frigg",
+      "email": "thisisntcool@gmail.com",
+      "password": "1234567",
+      "id": "2ccfe0a6-48ae-4f58-b833-bc77dc31dd9e"
     }
   ]
 }

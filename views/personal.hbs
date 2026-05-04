@@ -2,15 +2,38 @@
 <section class="page" id="page-details">
   <div class="details-header">
     <div>
-      <p class="section-eyebrow">Collection</p>
-      <h2 class="section-title">{{category.name}}</h2>
+      <p class="section-eyebrow">My Uploads</p>
+      <h2 class="section-title">Personal Collection</h2>
     </div>
   </div>
 
+  <!-- Add Photo Form -->
+  <div class="add-photo-form">
+    <h3>Add a New Photo</h3>
+    <form method="POST" action="/personal/addphoto" enctype="multipart/form-data">
+      <input type="text"   name="title"    placeholder="Title"    required />
+      <input type="text"   name="location" placeholder="Location" />
+      <input type="text"   name="aperture" placeholder="Aperture e.g. f/2.8" />
+      <input type="text"   name="shutter"  placeholder="Shutter e.g. 1/250s" />
+      <input type="text"   name="iso"      placeholder="ISO e.g. ISO 100" />
+      <input type="text"   name="lens"     placeholder="Lens e.g. 35mm" />
+      <input type="text"   name="camera"   placeholder="Camera" />
+      <input type="file"   name="picture"  accept="image/*" />
+      <button type="submit">Upload Photo</button>
+    </form>
+  </div>
+
+  <!-- Photo Grid -->
   <div class="photo-grid">
-    {{#each category.photos}}
+    {{#each photos}}
     <div class="photo-card">
-      <img src="{{this.img}}" />
+
+      {{#if this.img}}
+        <img src="{{this.img}}" alt="{{this.title}}" />
+      {{else}}
+        <div class="no-image">No image uploaded</div>
+      {{/if}}
+
       <div class="photo-info">
         <h3 class="photo-title">{{this.title}}</h3>
         <p class="photo-location">{{this.location}}</p>
@@ -21,8 +44,29 @@
           <span class="meta-tag">{{this.lens}}</span>
           <span class="meta-tag">{{this.camera}}</span>
         </div>
+
+        <!-- Edit Form -->
+        <form method="POST" action="/personal/updatephoto/{{this.id}}">
+          <input type="text" name="title"    value="{{this.title}}"    placeholder="Title" />
+          <input type="text" name="location" value="{{this.location}}" placeholder="Location" />
+          <input type="text" name="aperture" value="{{this.aperture}}" placeholder="Aperture" />
+          <input type="text" name="shutter"  value="{{this.shutter}}"  placeholder="Shutter" />
+          <input type="text" name="iso"      value="{{this.iso}}"      placeholder="ISO" />
+          <input type="text" name="lens"     value="{{this.lens}}"     placeholder="Lens" />
+          <input type="text" name="camera"   value="{{this.camera}}"   placeholder="Camera" />
+          <button type="submit">Save Changes</button>
+        </form>
+
+        <!-- Delete Button -->
+        <a href="/personal/deletephoto/{{this.id}}">
+          <button>Delete Photo</button>
+        </a>
+
       </div>
     </div>
+    {{else}}
+      <p>No personal photos yet — add one above!</p>
     {{/each}}
   </div>
+
 </section>

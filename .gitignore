@@ -1,2 +1,12 @@
-node_modules
-package-lock.json
+# Dependencies
+node_modules/
+
+# Environment variables — NEVER commit this, it contains your API secrets
+.env
+
+# Temporary upload files
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -5,49 +5,70 @@ import logger from "./utils/logger.js";
 
 const router = express.Router();
 
-// add your own routes below
-
-import profile from './controllers/profile.js';
-router.get('/', profile.createView);
-
-import start from './controllers/start.js';
-router.get('/start', start.createView);
-
-import dashboard from './controllers/dashboard.js';
-router.get('/dashboard', dashboard.createView);
-
-import about from './controllers/about.js';
-router.get('/about', about.createView);
+// ─── Controller Imports ───────────────────────────────────────────────────────
 
 import account from './controllers/account.js';
-router.get('/', account.index);
+import profile from './controllers/profile.js';
+import start from './controllers/start.js';
+import dashboard from './controllers/dashboard.js';
+import about from './controllers/about.js';
+import personal from './controllers/personal.js';
+import stats from './controllers/stats.js';
+
+// Category detail controllers
+import detailsL from './controllers/detailsL.js';
+import detailsA from './controllers/detailsA.js';
+import detailsM from './controllers/detailsM.js';
+import detailsN from './controllers/detailsN.js';
+import detailsP from './controllers/detailsP.js';
+import detailsS from './controllers/detailsS.js';
+
+// ─── Auth Routes ──────────────────────────────────────────────────────────────
+
+// FIX: removed duplicate router.get('/') — profile.createView now owns the root
+router.get('/', profile.createView);
 router.get('/login', account.login);
 router.get('/signup', account.signup);
 router.get('/logout', account.logout);
 router.post('/register', account.register);
 router.post('/authenticate', account.authenticate);
 
-import detailsL from './controllers/detailsL.js';
+// ─── Main App Routes ──────────────────────────────────────────────────────────
+
+router.get('/start', start.createView);
+router.get('/dashboard', dashboard.createView);
+router.get('/about', about.createView);
+router.get('/personal', personal.createView);
+router.get('/stats', stats.createView);
+
+// ─── Photo CRUD Routes ────────────────────────────────────────────────────────
+
+// Add a photo to a category
+router.post('/category/:id/addphoto', dashboard.addPhoto);
+
+// Delete a photo from a category
+router.get('/category/:id/deletephoto/:photoid', dashboard.deletePhoto);
+
+// Edit/update a photo in a category
+router.post('/category/:id/updatephoto/:photoid', dashboard.updatePhoto);
+
+// ─── Category Detail Routes ───────────────────────────────────────────────────
+
 router.get('/detailsL', detailsL.createView);
-
-import detailsA from './controllers/detailsA.js';
 router.get('/detailsA', detailsA.createView);
-
-import detailsM from './controllers/detailsM.js';
 router.get('/detailsM', detailsM.createView);
-
-import detailsN from './controllers/detailsN.js';
 router.get('/detailsN', detailsN.createView);
-
-import detailsP from './controllers/detailsP.js';
 router.get('/detailsP', detailsP.createView);
-
-import detailsS from './controllers/detailsS.js';
 router.get('/detailsS', detailsS.createView);
 
-import personal from './controllers/personal.js';
-router.get('/personal', personal.createView);
+// ─── Error Route ──────────────────────────────────────────────────────────────
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
-export default router;
 
+// Personal collection routes
+router.get('/personal', personal.createView);
+router.post('/personal/addphoto', personal.addPhoto);
+router.get('/personal/deletephoto/:photoid', personal.deletePhoto);
+router.post('/personal/updatephoto/:photoid', personal.updatePhoto);
+
+export default router;
