@@ -8,12 +8,10 @@ const about = {
 
     const viewData = {
       title: 'About',
-      info: appStore.getAppInfo(),
       totalPhotos: totalPhotos,
       totalCollections: categories.length
     };
     response.render('about', viewData);
   }
 };
-
 export default about;

@@ -7,7 +7,6 @@ const about = {
     const totalPhotos = categories.reduce((sum, cat) => sum + cat.photos.length, 0);
     const viewData = {
       title: 'About',
-      info: appStore.getAppInfo(),
       totalPhotos: totalPhotos,
       totalCollections: categories.length
     };
