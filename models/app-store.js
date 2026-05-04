@@ -15,4 +15,5 @@ const about = {
     response.render('about', viewData);
   }
 };
-export default appStore;
+
+export default about;
