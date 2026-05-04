@@ -1,14 +1,8 @@
 
 'use strict';
-/**
- * @file detailsP.js
- * @description Controller for the Portrait collection details page.
- * Loads the Portrait category from the photo store JSON and passes it to the view.
- * @module controllers/detailsP
- */
-
 import { createRequire } from 'module';
 import logger from '../utils/logger.js';
+import account from "./account.js";
 
 // createRequire lets us import JSON files in ES module projects
 const require = createRequire(import.meta.url);

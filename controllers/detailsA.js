@@ -1,13 +1,7 @@
 'use strict';
-/**
- * @file detailsA.js
- * @description Controller for the Animals collection details page.
- * Loads the Animals category from the photo store JSON and passes it to the view.
- * @module controllers/detailsA
- */
-
 import { createRequire } from 'module';
 import logger from '../utils/logger.js';
+import account from "./account.js";
 
 // createRequire lets us import JSON files in ES module projects
 const require = createRequire(import.meta.url);

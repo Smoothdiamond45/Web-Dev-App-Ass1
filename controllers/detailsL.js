@@ -1,14 +1,8 @@
 
 'use strict';
-/**
- * @file detailsL.js
- * @description Controller for the Landscape collection details page.
- * Loads the Landscape category from the photo store JSON and passes it to the view.
- * @module controllers/detailsL
- */
-
 import { createRequire } from 'module';
 import logger from '../utils/logger.js';
+import account from "./account.js";
 
 // createRequire lets us import JSON files in ES module projects
 const require = createRequire(import.meta.url);

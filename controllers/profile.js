@@ -1,20 +1,19 @@
 'use strict';
-
 import logger from "../utils/logger.js";
 import appStore from "../models/app-store.js";
 import account from "./account.js";
 
-const about = {
+const profile = {
   createView(request, response) {
-    logger.info("About page loading!");
+    logger.info("Profile page loading!");
     
     const viewData = {
       title: "CA1 Starter App",
       info: appStore.getAppInfo()
     };
     
-    response.render('about', viewData);   
+    response.render('profile', viewData);   
   },
 };
 
-export default about;
+export default profile;

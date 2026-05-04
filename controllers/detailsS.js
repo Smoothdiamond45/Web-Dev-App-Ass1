@@ -1,14 +1,8 @@
 
 'use strict';
-/**
- * @file detailsS.js
- * @description Controller for the Street collection details page.
- * Loads the Street category from the photo store JSON and passes it to the view.
- * @module controllers/detailsS
- */
-
 import { createRequire } from 'module';
 import logger from '../utils/logger.js';
+import account from "./account.js";
 
 // createRequire lets us import JSON files in ES module projects
 const require = createRequire(import.meta.url);

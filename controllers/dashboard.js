@@ -1,5 +1,6 @@
 // dashboard.js
 import { createRequire } from 'module';
+import account from "./account.js";
 
 const require = createRequire(import.meta.url);
 const photoStore = require('../models/photo-store.json');
