@@ -1,5 +1,5 @@
 // dashboard.js
-import photoStore from '../models/photo-store.js';
+import photoStore from '../models/photo-store.json';
 
 const dashboard = {
   createView(request, response) {
