@@ -3,101 +3,26 @@
   <div class="details-header">
     <div>
       <p class="section-eyebrow">Collection</p>
-      <h2 class="section-title">Street</h2>
+      <h2 class="section-title">{{category.name}}</h2>
     </div>
   </div>
 
   <div class="photo-grid">
-
+    {{#each category.photos}}
     <div class="photo-card">
-    <img src="images/Street/high.jpg" /> 
+      <img src="{{this.img}}" />
       <div class="photo-info">
-        <h3 class="photo-title">Perfect Windows</h3>
-        <p class="photo-location">Copenhagen, Denmark</p>
+        <h3 class="photo-title">{{this.title}}</h3>
+        <p class="photo-location">{{this.location}}</p>
         <div class="photo-meta">
-          <span class="meta-tag">f/11</span>
-          <span class="meta-tag">1/80s</span>
-          <span class="meta-tag">ISO 100</span> 
-          <span class="meta-tag">35mm</span>
-          <span class="meta-tag">Sony A7II</span>
+          <span class="meta-tag">{{this.aperture}}</span>
+          <span class="meta-tag">{{this.shutter}}</span>
+          <span class="meta-tag">{{this.iso}}</span>
+          <span class="meta-tag">{{this.lens}}</span>
+          <span class="meta-tag">{{this.camera}}</span>
         </div>
       </div>
     </div>
-
-    <div class="photo-card">
-      <img src="images/Street/ball.jpg" />
-      <div class="photo-info">
-       <h3 class="photo-title">Ball</h3>
-        <p class="photo-location">Valencia</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/1.78</span>
-          <span class="meta-tag">1/5814s</span>
-          <span class="meta-tag">ISO 80</span>
-          <span class="meta-tag">6.765mm</span>
-          <span class="meta-tag">iPhone 15 Pro</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="photo-card">
-      <img src="images/Street/spain.jpg"/>
-      <div class="photo-info">
-        <h3 class="photo-title">Fountain</h3>
-        <p class="photo-location">Dublin</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/13</span>
-          <span class="meta-tag">1/100s</span>
-          <span class="meta-tag">ISO 100</span>
-          <span class="meta-tag">70mm</span>
-          <span class="meta-tag">Sony A7II</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="photo-card">
-      <img src="images/Street/london.jpg"/>
-      <div class="photo-info">
-        <h3 class="photo-title">Breaking through</h3>
-        <p class="photo-location">London</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/14</span>
-          <span class="meta-tag">1/100s</span>
-          <span class="meta-tag">ISO 100</span>
-          <span class="meta-tag">74mm</span>
-          <span class="meta-tag">Sony A7II</span>
-        </div>
-      </div>
-    </div>
-
-      <div class="photo-card">
-      <img src="images/Street/denmark.jpg"/>
-      <div class="photo-info">
-        <h3 class="photo-title">Brick Tower</h3>
-        <p class="photo-location">Copenhagen, Denmark</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/1,5</span>
-          <span class="meta-tag">1/60s</span>
-          <span class="meta-tag">ISO 250</span>
-          <span class="meta-tag">5.7mm</span>
-          <span class="meta-tag">iPhone 13 Pro Max</span>
-        </div>
-      </div>
-    </div>
-
-      <div class="photo-card">
-      <img src="images/Street/odd.jpg"/>
-      <div class="photo-info">
-        <h3 class="photo-title">Standing Pots</h3>
-        <p class="photo-location">Copenhagen, Denmark</p>
-        <div class="photo-meta">
-          <span class="meta-tag">f/11</span>
-          <span class="meta-tag">1/80s</span>
-          <span class="meta-tag">ISO 100</span>
-          <span class="meta-tag">35mm</span>
-          <span class="meta-tag">Sony A7II</span>
-        </div>
-      </div>
-    </div>
-
+    {{/each}}
   </div>
 </section>

@@ -1,0 +1,28 @@
+{{> menu}}
+<section class="page" id="page-details">
+  <div class="details-header">
+    <div>
+      <p class="section-eyebrow">Collection</p>
+      <h2 class="section-title">{{category.name}}</h2>
+    </div>
+  </div>
+
+  <div class="photo-grid">
+    {{#each category.photos}}
+    <div class="photo-card">
+      <img src="{{this.img}}" />
+      <div class="photo-info">
+        <h3 class="photo-title">{{this.title}}</h3>
+        <p class="photo-location">{{this.location}}</p>
+        <div class="photo-meta">
+          <span class="meta-tag">{{this.aperture}}</span>
+          <span class="meta-tag">{{this.shutter}}</span>
+          <span class="meta-tag">{{this.iso}}</span>
+          <span class="meta-tag">{{this.lens}}</span>
+          <span class="meta-tag">{{this.camera}}</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</section>
