@@ -25,7 +25,6 @@ import detailsS from './controllers/detailsS.js';
 
 // ─── Auth Routes ──────────────────────────────────────────────────────────────
 
-// FIX: removed duplicate router.get('/') — profile.createView now owns the root
 router.get('/', profile.createView);
 router.get('/login', account.login);
 router.get('/signup', account.signup);
@@ -61,14 +60,15 @@ router.get('/detailsN', detailsN.createView);
 router.get('/detailsP', detailsP.createView);
 router.get('/detailsS', detailsS.createView);
 
-// ─── Error Route ──────────────────────────────────────────────────────────────
-
-router.get('/error', (request, response) => response.status(404).end('Page not found.'));
-
 // Personal collection routes
 router.get('/personal', personal.createView);
 router.post('/personal/addphoto', personal.addPhoto);
 router.get('/personal/deletephoto/:photoid', personal.deletePhoto);
 router.post('/personal/updatephoto/:photoid', personal.updatePhoto);
+
+// ─── Error Route ──────────────────────────────────────────────────────────────
+
+router.get('/error', (request, response) => response.status(404).end('Page not found.'));
+
 
 export default router;
