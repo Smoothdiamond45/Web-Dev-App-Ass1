@@ -1,69 +1,46 @@
-{{> menu}}
-<section class="page" id="page-dashboard">
-  <div class="section-header">
-    <p class="section-eyebrow">My Collections</p>
-    <h2 class="section-title">Dashboard</h2>
-  </div>
 
-  <div class="category-grid">
-
-    <div class="category-card">
-      <div class="card-bg"></div>
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <h3 class="card-title">Landscape</h3>
-        <p class="card-count">6 photos</p>
-        <li><a href="/detailsL" class="nav-link" data-page="detailsL">View Collection</a></li>
-      </div>
-    </div>
-
-    <div class="category-card">
-      <div class="card-bg"></div>
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <h3 class="card-title">Street</h3>
-        <p class="card-count">6 photos</p>
-        <li><a href="/detailsS" class="nav-link" data-page="detailsS">View Collection</a></li>
-      </div>
-    </div>
-
-    <div class="category-card">
-      <div class="card-bg"></div>
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <h3 class="card-title">Night & Long Exposure</h3>
-        <p class="card-count">6 photos</p>
-        <li><a href="/detailsN" class="nav-link" data-page="detailsN">View Collection</a></li>
-      </div>
-    </div>
-
-    <div class="category-card">
-      <div class="card-bg"></div>
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <h3 class="card-title">Portrait</h3>
-        <p class="card-count">5 photos</p>
-       <li><a href="/detailsP" class="nav-link" data-page="detailsP">View Collection</a></li>
-      </div>
-    </div>
-
-    <div class="category-card">
-      <div class="card-bg"></div>
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <h3 class="card-title">Macro</h3>
-        <p class="card-count">6 photos</p>
-        <li><a href="/detailsM" class="nav-link" data-page="detailsM">View Collection</a></li>
-      </div>
-    </div>
-
+{{#each categories}}
   <div class="category-card">
-      <div class="card-bg"></div>
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <h3 class="card-title">Animals</h3>
-        <p class="card-count">6 photos</p>
-        <li><a href="/detailsA" class="nav-link" data-page="detailsA">View Collection</a></li>
-      </div>
+    <div class="card-content">
+      <h3 class="card-title">{{this.name}}</h3>
+      <p class="card-count">{{this.photos.length}} photos</p>
+      <a href="/details/{{this.id}}">View Collection</a>
     </div>
-</section>
+  </div>
+{{/each}}
+{{#each categories}}
+  <div class="category-card">
+    <div class="card-content">
+      <h3 class="card-title">{{this.name}}</h3>
+      <p class="card-count">{{this.photos.length}} photos</p>
+      <a href="/details/{{this.id}}">View Collection</a>
+    </div>
+  </div>
+{{/each}}
+{{#each categories}}
+  <div class="category-card">
+    <div class="card-content">
+      <h3 class="card-title">{{this.name}}</h3>
+      <p class="card-count">{{this.photos.length}} photos</p>
+      <a href="/details/{{this.id}}">View Collection</a>
+    </div>
+  </div>
+{{/each}}
+{{#each categories}}
+  <div class="category-card">
+    <div class="card-content">
+      <h3 class="card-title">{{this.name}}</h3>
+      <p class="card-count">{{this.photos.length}} photos</p>
+      <a href="/details/{{this.id}}">View Collection</a>
+    </div>
+  </div>
+{{/each}}
+{{#each categories}}
+  <div class="category-card">
+    <div class="card-content">
+      <h3 class="card-title">{{this.name}}</h3>
+      <p class="card-count">{{this.photos.length}} photos</p>
+      <a href="/details/{{this.id}}">View Collection</a>
+    </div>
+  </div>
+{{/each}}

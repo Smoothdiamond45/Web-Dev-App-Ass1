@@ -1,18 +1,16 @@
-'use strict';
+import photoStore from '../models/photo-store.js';
 
-import logger from '../utils/logger.js';
-import JsonStore from './json-store.js';
+const about = {
+  createView(request, response) {
+    const categories = photoStore.findAll('categories');
+    const totalPhotos = categories.reduce((sum, cat) => sum + cat.photos.length, 0);
 
-const appStore = {
-
-  store: new JsonStore('./models/app-store.json', { info: {} }),
-  collection: 'info',
-  array: 'creators',
-
-  getAppInfo() {
-    return this.store.findAll(this.collection);
-  },
-
+    const viewData = {
+      title: 'About',
+      info: appStore.getAppInfo(),
+      totalPhotos: totalPhotos,
+      totalCollections: categories.length
+    };
+    response.render('about', viewData);
+  }
 };
-
-export default appStore;
