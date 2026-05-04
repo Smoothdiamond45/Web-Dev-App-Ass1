@@ -1,3 +1,4 @@
+import appStore from '../models/app-store.js';
 import photoStore from '../models/photo-store.js';
 
 const about = {
