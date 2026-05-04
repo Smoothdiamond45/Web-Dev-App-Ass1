@@ -13,3 +13,4 @@ const about = {
     response.render('about', viewData);
   }
 };
+export default about;
