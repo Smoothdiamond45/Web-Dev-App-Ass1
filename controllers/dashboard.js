@@ -10,3 +10,4 @@ const dashboard = {
     response.render('dashboard', viewData);
   }
 };
+export default dashboard;

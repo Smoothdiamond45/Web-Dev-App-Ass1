@@ -13,3 +13,4 @@ const start = {
     response.render('start', viewData);
   }
 };
+export default start;
