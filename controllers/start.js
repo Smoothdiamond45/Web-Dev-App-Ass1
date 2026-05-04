@@ -1,33 +1,15 @@
-'use strict';
-/**
- * @file start.js
- * @description Controller for the Start page.
- * Handles rendering the initial landing view with app information.
- * @module controllers/start
- */
-
-import logger from "../utils/logger.js";
-import appStore from "../models/app-store.js";
+import photoStore from '../models/photo-store.js';
 
 const start = {
-    /**
-   * Renders the Start page view.
-   * Retrieves app info from the store and passes it to the template.
-   * @param {object} request - Express HTTP request object
-   * @param {object} response - Express HTTP response object
-   */
   createView(request, response) {
-    logger.info("Start page loading!");
-    
+    const categories = photoStore.findAll('categories');
+    const totalPhotos = categories.reduce((sum, cat) => sum + cat.photos.length, 0);
     const viewData = {
-      title: "CA1 Starter App",
-      info: appStore.getAppInfo()
+      title: 'Start',
+      info: appStore.getAppInfo(),
+      totalPhotos: totalPhotos,
+      totalCollections: categories.length
     };
-    
-    response.render('start', viewData);   
-  },
+    response.render('start', viewData);
+  }
 };
-
-export default start;
-
-

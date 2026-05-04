@@ -1,11 +1,11 @@
-// dashboard.js
-import photoStore from '../models/photo-store.json';
+import photoStore from '../models/photo-store.js';
 
 const dashboard = {
   createView(request, response) {
+    const categories = photoStore.findAll('categories');
     const viewData = {
       title: 'Dashboard',
-      categories: photoStore.findAll('categories')
+      categories: categories
     };
     response.render('dashboard', viewData);
   }
